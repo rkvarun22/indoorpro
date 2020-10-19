@@ -1,10 +1,3 @@
-/*!
- * multiscroll.js 0.2.2
- * https://github.com/alvarotrigo/multiscroll.js
- * @license MIT licensed
- *
- * Copyright (C) 2016 alvarotrigo.com - A project by Alvaro Trigo
- */
 (function($, window, document, Math, undefined) {
 
     $.fn.multiscroll = function(options) {
@@ -111,7 +104,7 @@
         });
 
         $('.ms-right').css({
-            'right': '1px', //http://stackoverflow.com/questions/23675457/chrome-and-opera-creating-small-padding-when-using-displaytable
+            'right': '1px', 
             'top': '0',
             '-ms-touch-action': 'none',
             'touch-action': 'none'
@@ -362,7 +355,7 @@
                 }
             }else{
                 //in order to call the functions only when the resize is finished
-                //http://stackoverflow.com/questions/4298612/jquery-how-to-call-resize-event-only-once-its-finished-resizing
+                
                 clearTimeout(resizeId);
 
                 resizeId = setTimeout(function(){
@@ -532,8 +525,6 @@
         /**
          * Detecting mousewheel scrolling
          *
-         * http://blogs.sitepointstatic.com/examples/tech/mouse-wheel/index.html
-         * http://www.sitepoint.com/html5-javascript-mouse-wheel/
          */
         function MouseWheelHandler(e) {
             // cross-browser wheel delta
@@ -656,11 +647,7 @@
         }
 
 
-        /**
-        * Checks for translate3d support
-        * @return boolean
-        * http://stackoverflow.com/questions/5661671/detecting-transform-translate3d-support
-        */
+        
         function support3d() {
             var el = document.createElement('p'),
                 has3d,
@@ -835,8 +822,7 @@
         }
 
         /*
-        * Returns and object with Microsoft pointers (for IE<11 and for IE >= 11)
-        * http://msdn.microsoft.com/en-us/library/ie/dn304886(v=vs.85).aspx
+        * 
         */
         function getMSPointer(){
             var pointer;
@@ -856,7 +842,7 @@
 
         /**
         * Gets the pageX and pageY properties depending on the browser.
-        * https://github.com/alvarotrigo/fullPage.js/issues/194#issuecomment-34069854
+        * 
         */
         function getEventsPage(e){
             var events = [];
