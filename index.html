@@ -1,158 +1,185 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Inclunav</title>
+    <meta name="Resource-type" content="Document" />
 
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
-	<title>Inclunav</title>
-	<meta name="Resource-type" content="Document" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
 
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,600&display=swap" rel="stylesheet">
-	
-	
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/jquery.multiscroll.css" />
+    <link rel="stylesheet" type="text/css" href="css/examples.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easings.min.js"></script>
+    <script type="text/javascript" src="js/jquery.multiscroll.js"></script>
 
-	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/jquery.multiscroll.css" />		
-	<link rel="stylesheet" type="text/css" href="css/examples.css" />		
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.easings.min.js"></script>
-	<script type="text/javascript" src="js/jquery.multiscroll.js"></script>
-
-	<script type="text/javascript">
-	 $(document).ready(function() {
-            $('#myContainer').multiscroll({
-            	sectionsColor: ['##FFFFFF', '#FFFFFF', '#FFFFFF', '##FFFFFF'],
-            	anchors: ['first', 'second', 'third', 'fourth',],
-            	menu: '#menu',
-            	css3: true,
-            	paddingTop: '30px',
-            	paddingBottom: '30px'
-            });
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#myContainer").multiscroll({
+          sectionsColor: ["##FFFFFF", "#FFFFFF", "#FFFFFF", "##FFFFFF"],
+          anchors: ["first", "second", "third", "fourth"],
+          menu: "#menu",
+          css3: true,
+          paddingTop: "30px",
+          paddingBottom: "30px"
         });
+      });
     </script>
 
-
     <style>
-    h1{
-    	color: #000000;
-    }
-    
-	/* Fixed header and footer.
+      h1 {
+        color: #000000;
+      }
+
+      /* Fixed header and footer.
 	* --------------------------------------- */
-	#header, #footer{
-		position:fixed;
-		height: 50px;
-		display:block;
-		width: 100%;
-		background: #333;
-		z-index:9;
-		text-align:center;
-		color: #f2f2f2;
-		padding: 20px 0 0 0;
-	}
-	
-	#header{
-		top:0px;
-	}
-	#footer{
-		bottom:0px;
-	}
-	
-	.navbar {
-    position: relative;
-    min-height: 50px;
-    margin-bottom: 20px;
-    border: 1px solid transparent;
-    z-index: 100;
-}
-	</style>
-</head>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#">
-		  <!-- Logo Image -->
-		  <img src="images/web/logoWhite.png" width="30" alt="" class="d-inline-block align-middle mr-2">
-		  <!-- Logo Text -->
-		  <!-- 	 -->
-	  </a>
+      #header,
+      #footer {
+        position: fixed;
+        height: 50px;
+        display: block;
+        width: 100%;
+        background: #333;
+        z-index: 9;
+        text-align: center;
+        color: #f2f2f2;
+        padding: 20px 0 0 0;
+      }
+
+      #header {
+        top: 0px;
+      }
+      #footer {
+        bottom: 0px;
+      }
+
+      .navbar {
+        position: relative;
+        min-height: 50px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        z-index: 100;
+      }
+    </style>
+  </head>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button
+          type="button"
+          class="navbar-toggle"
+          data-toggle="collapse"
+          data-target="#myNavbar"
+        >
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <!-- Logo Image -->
+          <img
+            src="images/web/logoWhite.png"
+            width="30"
+            alt=""
+            class="d-inline-block align-middle mr-2"
+          />
+          <!-- Logo Text -->
+          <!-- 	 -->
+        </a>
+      </div>
+      <!-- <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div> -->
+  </nav>
+  <body>
+    <div id="myContainer">
+      <div class="ms-left">
+        <div class="ms-section" id="left1">
+          <img
+            src="images/web/OrionTree_Fairbairn_1071.jpg"
+            class="img-responsive"
+          />
+        </div>
+
+        <div class="ms-section" id="left2">
+          <h1>Annotate</h1>
+          <ul>
+            <li>Annotate as many buildings you want</li>
+            <li>Upload floor plan, tag floor elements</li>
+            <li>
+              Tag information such as rooms, doors, services, washrooms and
+              floor connections like lift, stairs on floor plan
+            </li>
+            <li>Testing smoothly using our testing interface</li>
+            <li>Make it live to the user</li>
+          </ul>
+        </div>
+
+        <div class="ms-section" id="left3">
+          <img src="images/web/potw1726b.jpg" class="img-responsive" />
+        </div>
+        <div class="ms-section" id="left4">
+          <h1>Get In Touch</h1>
+          <textarea class="contactName">&nbsp;Name</textarea><br />
+          <textarea class="contactEmail">&nbsp;Email Id</textarea><br />
+          <textarea class="contactMsg">&nbsp;Message</textarea>
+        </div>
+      </div>
+
+      <div class="ms-right">
+        <div class="ms-section" id="right1">
+          <h1>Inclunav</h1>
+          <h3>Making Indoor Navigation Smooth and Accessible</h3>
+          <p>
+            Indoor wayfinding and service accessibility are challenging,
+            especially if you visit a large indoor facility like healthcare
+            centres, transport terminals, museums and shopping complexes for the
+            first time. Information unavailability and poor accessibility in
+            such facilities have brought these challenges to stand as a
+            mainstream problem for indoor spaces. INCLUNAV provides a compact
+            and scalable solution.
+          </p>
+        </div>
+
+        <div class="ms-section" id="right2">
+          <img src="images/web/indoor2.jpg" class="img-responsive" />
+        </div>
+
+        <div class="ms-section" id="right3">
+          <h1>Navigate</h1>
+          <ul>
+            <li>Smooth and accesible indoor navigation</li>
+            <li>
+              Easy localization to help user to find a location inside the
+              building
+            </li>
+            <li>Quick search for rooms and nearby services while navigating</li>
+            <li>easy multiflor navigationa assistence</li>
+            <li>Mobiel App and Web version available</li>
+          </ul>
+        </div>
+        <div class="ms-section" id="right4">
+          <img src="images/web/telephone2.jpg" class="img-responsive" />
+        </div>
+      </div>
     </div>
-    <div class="collapse navbar-collapse navbar-right" id="myNavbar" >
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<body>
-
-<div id="myContainer">
-
-	<div class="ms-left">
-		<div class="ms-section" id="left1">
-			<img src="images/web/OrionTree_Fairbairn_1071.jpg" class="img-responsive">
-		</div>
-
-		<div class="ms-section" id="left2">
-			<h1>Annotate</h1>
-                <ul>
-                    <li>Annotate as many buildings you want</li>
-                    <li>Upload floor plan, tag floor elements</li>
-                    <li>Tag information such as rooms, doors, services, washrooms and floor connections like lift, stairs on floor
-                      plan</li>
-                    <li>Testing smoothly using our testing interface</li>
-                    <li>Make it live to the user</li>
-                  </ul>
-		</div>
-
-		<div class="ms-section" id="left3">
-			<img src="images/web/potw1726b.jpg" class="img-responsive">
-		</div>
-		<div class="ms-section" id="left4">
-			<h1>Get In Touch</h1>
-              <textarea class="contactName">&nbsp;Name</textarea><br>
-              <textarea class="contactEmail">&nbsp;Email Id</textarea><br>
-              <textarea class="contactMsg">&nbsp;Message</textarea>
-		</div>
-	</div>
-	
-	<div class="ms-right">
-		<div class="ms-section" id="right1">
-			<h1>Inclunav</h1>
-                <h3>Making Indoor Navigation Smooth and Accessible</h3>
-                <p>Indoor wayfinding and service accessibility are challenging, especially if you visit a large indoor facility 
-                like healthcare centres, transport terminals, museums and shopping complexes for the first time. Information 
-                unavailability and poor accessibility in such facilities have brought these challenges to stand as a 
-                mainstream problem for indoor spaces. INCLUNAV provides a compact and scalable solution.</p>
-		</div>
-
-		<div class="ms-section" id="right2">
-			<img src="images/web/indoor2.jpg" class="img-responsive">
-		</div>
-
-		<div class="ms-section" id="right3">
-			<h1>Navigate</h1>
-                <ul>
-                    <li>Smooth and accesible indoor navigation</li>
-                    <li>Easy localization to help user to find a location inside the building</li>
-                    <li>Quick search for rooms and nearby services while navigating</li>
-                    <li>easy multiflor navigationa assistence</li>
-                    <li>Mobiel App and Web version available</li>
-                  </ul>
-		</div>
-		<div class="ms-section" id="right4">
-			<img src="images/web/telephone2.jpg" class="img-responsive" >
-		</div>
-	</div>	
-</div>
-</body>
+  </body>
 </html>
